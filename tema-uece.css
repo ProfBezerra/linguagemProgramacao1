@@ -1,0 +1,52 @@
+/* ==========================================================
+   Tema UECE para MARP
+   Autor: ChatGPT
+   ========================================================== */
+
+@import "default";
+
+section {
+  font-family: "Arial", sans-serif;
+  color: #0b2d52; /* azul escuro institucional */
+  padding: 40px;
+}
+
+/* Capa */
+section.lead h1 {
+  color: #0b2d52;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+section.lead h2 {
+  color: #1d5fa7;
+  font-size: 1.6rem;
+  margin-top: -15px;
+}
+
+/* Títulos dos slides */
+h1, h2 {
+  color: #0b2d52;
+  font-weight: 700;
+}
+
+/* Caixa de destaque */
+blockquote {
+  border-left: 6px solid #1d5fa7;
+  padding-left: 15px;
+  color: #1d5fa7;
+}
+
+/* Código */
+pre, code {
+  background: #eef5ff;
+  color: #0b2d52;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.85rem;
+}
+
+/* Rodapé */
+footer {
+  color: #1d5fa7;
+  font-size: 0.7rem;
+}
