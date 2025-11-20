@@ -66,7 +66,7 @@ Desktop.ini
 /vendor/
 
 # Marp artefacts (gerados a partir de markdown)
-*.pdf
+#*.pdf
 *.pptx
 *.html
 
