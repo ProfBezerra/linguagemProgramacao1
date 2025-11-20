@@ -7,6 +7,8 @@ footer: Linguagem de Programação I — UECE/UAB
 ---
 <!-- markdownlint-disable MD025 MD029 MD022 -->
 
+> Este README é a fonte oficial da disciplina. Materiais adicionais em `rascunhos/` são auxiliares e podem mudar.
+
 # **Fundamentos de Programação em Pascal**
 
 ## Do algoritmo ao programa — exemplo integrador: Jogo da Velha (texto)
@@ -398,6 +400,18 @@ end;
 - Procedimentos e funções (modularização)
 - Vetores e laços para reduzir repetição
 - Validação robusta de entrada
+
+---
+
+## Rascunhos Auxiliares
+
+Os seguintes arquivos são materiais de apoio (rascunhos). Use sempre este README como referência principal.
+
+- `rascunhos/unidade1.md` – Enfoque inicial da Unidade 1 com fluxo detalhado do jogo.
+- `rascunhos/introducao_pascal.md` – Versão preliminar ampliada de fundamentos.
+- `rascunhos/slides_jogo_da_velha.md` – Construção incremental do jogo da velha.
+
+> ⚠️ Conteúdos de rascunho podem divergir ou ser reorganizados sem aviso.
 - Estruturas de dados avançadas
 
 ---

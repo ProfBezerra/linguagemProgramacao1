@@ -1,11 +1,14 @@
 ---
 marp: true
 theme: tema-uece
-title: Jogo da Velha em Pascal (Modo Texto)
+title: Jogo da Velha em Pascal (Modo Texto) (Rascunho)
 paginate: true
 footer: Linguagem de Programação I — UECE/UAB
+class: draft
 ---
 <!-- markdownlint-disable MD025 MD029 MD022 -->
+
+> ⚠️ **RASCUNHO:** Este material é auxiliar. Use `README.md` como fonte oficial. Conteúdo sujeito a revisão.
 
 # **Jogo da Velha em Pascal (Modo Texto)**
 ## Abordagem passo a passo sem matrizes e sem funções

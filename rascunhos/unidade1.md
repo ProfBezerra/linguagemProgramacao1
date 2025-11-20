@@ -1,11 +1,14 @@
 ---
 marp: true
 theme: tema-uece
-title: Unidade 1 – Fundamentos de Programação
+title: Unidade 1 – Fundamentos de Programação (Rascunho)
 paginate: true
 footer: Linguagem de Programação I — UECE/UAB
+class: draft
 ---
 <!-- markdownlint-disable MD025 MD029 MD022 -->
+
+> ⚠️ **RASCUNHO:** Este material é auxiliar. Use `README.md` como fonte oficial. Conteúdo sujeito a revisão.
 
 # **Unidade 1 – Fundamentos de Programação**
 
