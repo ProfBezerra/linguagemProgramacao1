@@ -11,7 +11,7 @@ footer: Linguagem de Programação I — UECE/UAB
 
 ## Do algoritmo ao programa — exemplo integrador: Jogo da Velha (texto)
 
-Autor: (preencha)
+Autor: Prof. Bezerra
 Disciplina: Linguagem de Programação I
 
 ---

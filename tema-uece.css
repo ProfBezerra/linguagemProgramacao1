@@ -1,52 +1,187 @@
 /* ==========================================================
-   Tema UECE para MARP
-   Autor: ChatGPT
+   Tema UECE Profissional para MARP
+   Paleta Institucional / Acessibilidade / Layout Limpo
    ========================================================== */
 
 @import "default";
 
-section {
-  font-family: "Arial", sans-serif;
-  color: #0b2d52; /* azul escuro institucional */
-  padding: 40px;
+:root {
+  --uece-primary: #0B2D52;
+  --uece-secondary: #1D5FA7;
+  --uece-accent: #F4B400; /* destaque */
+  --uece-bg: #FFFFFF;
+  --uece-bg-alt: #F5F7FA;
+  --uece-border: #DFE6EE;
+  --uece-text: #0B2D52;
+  --uece-muted: #2F2F33;
+  --uece-success: #147D3F;
+  --uece-danger: #C0392B;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-sm: 0 2px 4px rgba(11,45,82,0.08);
+  --shadow-md: 0 4px 12px rgba(11,45,82,0.12);
 }
 
-/* Capa */
+section {
+  font-family: 'Inter', 'Segoe UI', 'Arial', sans-serif;
+  color: var(--uece-text);
+  padding: 40px 60px;
+  background: var(--uece-bg);
+  line-height: 1.42;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+/* Capa com gradiente suave */
+section.lead {
+  background: linear-gradient(135deg, #0B2D52 0%, #1D5FA7 60%) !important;
+  color: #fff !important;
+  position: relative;
+}
+section.lead::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.12), transparent 60%);
+  pointer-events: none;
+}
 section.lead h1 {
-  color: #0b2d52;
-  font-size: 2.8rem;
+  color: #fff;
+  font-size: 3.2rem;
   font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.25);
 }
 section.lead h2 {
-  color: #1d5fa7;
-  font-size: 1.6rem;
-  margin-top: -15px;
+  color: #E9EEF5;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
 }
 
-/* Títulos dos slides */
-h1, h2 {
-  color: #0b2d52;
-  font-weight: 700;
-}
+/* Hierarquia de títulos */
+section h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 0.75rem; }
+section h2 { font-size: 1.6rem; font-weight: 600; margin: 1.4rem 0 0.6rem; }
+section h3 { font-size: 1.25rem; font-weight: 600; margin: 1.2rem 0 0.5rem; }
+section h4 { font-size: 1.05rem; font-weight: 600; margin: 1rem 0 0.4rem; }
+section h1, section h2, section h3, section h4 { color: var(--uece-primary); }
 
-/* Caixa de destaque */
+/* Listas refinadas */
+section ul, section ol {
+  padding-left: 1.1rem;
+  margin: 0.4rem 0 1rem;
+}
+section ul li { margin: 0.3rem 0; }
+section ul li::marker { color: var(--uece-secondary); }
+section ol li { margin: 0.35rem 0; }
+section li > code { background: #EFF4FA; }
+
+/* Blockquote acessível */
 blockquote {
-  border-left: 6px solid #1d5fa7;
-  padding-left: 15px;
-  color: #1d5fa7;
+  border-left: 6px solid var(--uece-secondary);
+  padding: 0.6rem 1rem;
+  background: var(--uece-bg-alt);
+  color: var(--uece-primary);
+  font-style: normal;
+  box-shadow: var(--shadow-sm);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+blockquote p { margin: 0.4rem 0; }
+
+/* Código (bloco) */
+pre {
+  background: #EFF4FA !important;
+  border: 1px solid var(--uece-border);
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+  line-height: 1.35;
+  position: relative;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.6), var(--shadow-sm);
+}
+pre code { background: transparent; padding: 0; }
+code:not(pre code) {
+  background: #F4F7FB;
+  border: 1px solid #E2E8F0;
+  padding: 2px 5px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85em;
+  font-family: 'Fira Code', monospace;
 }
 
-/* Código */
-pre, code {
-  background: #eef5ff;
-  color: #0b2d52;
-  border-radius: 8px;
-  padding: 10px;
-  font-size: 0.85rem;
+/* Tabelas */
+table { border-collapse: collapse; width: 100%; margin: 1rem 0 1.4rem; font-size: 0.95rem; }
+th, td { padding: 10px 14px; text-align: left; }
+th { background: var(--uece-secondary); color: #fff; font-weight: 600; }
+tr:nth-child(even) td { background: var(--uece-bg-alt); }
+tr:hover td { background: #E9F1F9; }
+td { border-bottom: 1px solid var(--uece-border); }
+
+/* Destaques especiais */
+.highlight {
+  background: linear-gradient(90deg, rgba(244,180,0,0.18), rgba(244,180,0,0));
+  border-left: 5px solid var(--uece-accent);
+  padding: 0.6rem 0.9rem;
+  margin: 1rem 0;
+  font-weight: 500;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
+.success { background: #E6F8EF; border-left: 5px solid var(--uece-success); padding: 0.6rem 0.9rem; }
+.warning { background: #FDECEA; border-left: 5px solid var(--uece-danger); padding: 0.6rem 0.9rem; }
 
 /* Rodapé */
 footer {
-  color: #1d5fa7;
-  font-size: 0.7rem;
+  color: var(--uece-secondary);
+  font-size: 0.65rem;
+  letter-spacing: 0.5px;
+  border-top: 1px solid var(--uece-border);
+  padding-top: 4px;
+  opacity: 0.85;
 }
+
+/* Links */
+a { color: var(--uece-secondary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Grid utilitária */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.col { display: flex; flex-direction: column; gap: 0.4rem; }
+.center { text-align: center; }
+.small { font-size: 0.85em; }
+
+/* KBD estilo */
+kbd {
+  background: #F4F7FB;
+  border: 1px solid var(--uece-border);
+  border-radius: var(--radius-sm);
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  box-shadow: 0 2px 0 #E1E6EC;
+}
+
+/* Imagens responsivas */
+img { max-width: 100%; height: auto; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); }
+img:hover { box-shadow: var(--shadow-md); }
+
+/* Seleção */
+::selection { background: var(--uece-secondary); color: #fff; }
+
+/* PDF / Print ajustes */
+@media print {
+  section { box-shadow: none !important; }
+  pre { box-shadow: none !important; }
+  a { text-decoration: underline; }
+}
+
+/* Acessibilidade foco */
+:focus-visible { outline: 3px solid var(--uece-accent); outline-offset: 2px; }
+
+/* Animação entrada leve (somente em tela, não em print) */
+@media screen {
+  section { animation: fadeIn 0.35s ease; }
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
