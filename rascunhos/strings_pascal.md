@@ -11,9 +11,10 @@ class: draft
 > ⚠️ **RASCUNHO:** Material auxiliar. Referência oficial: `README.md`.
 
 # **Strings em Pascal**
+
 ## Manipulação para tornar o Jogo da Velha mais amigável
 
-Autor: (preencha)  
+Autor: Prof Bezerra
 Disciplina: Linguagem de Programação I
 
 ---
@@ -219,13 +220,13 @@ end;
 
 ## Aplicações no Jogo da Velha
 
-| Objetivo | Uso de String |
-|----------|---------------|
-| Limpar entrada | `TrimSimples` |
-| Validar único caractere | `length(entrada)=1` |
-| Mensagem de estado | Concatenação dinâmica |
-| Log de jogadas | Acúmulo em uma string |
-| Normalizar símbolo | `upcase` em entrada futura |
+| Objetivo                 | Uso de String                |
+| ------------------------ | ---------------------------- |
+| Limpar entrada           | `TrimSimples`              |
+| Validar único caractere | `length(entrada)=1`        |
+| Mensagem de estado       | Concatenação dinâmica     |
+| Log de jogadas           | Acúmulo em uma string       |
+| Normalizar símbolo      | `upcase` em entrada futura |
 
 ---
 

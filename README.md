@@ -414,6 +414,9 @@ Os seguintes arquivos são materiais de apoio (rascunhos). Use sempre este READM
 - `rascunhos/strings_pascal.md` – Operações com strings para melhorar interação e validação.
 - `rascunhos/arrays_evolucao_jogo_da_velha.md` – Refatoração usando arrays 1D/2D e dinâmica.
 - `rascunhos/tipos_personalizados_pascal.md` – Uso de enum, record e set para estruturar melhor o jogo.
+- `rascunhos/arrays_pascal.md` – Conceitos de arrays (1D) e ponte para matrizes.
+- `rascunhos/matrizes_pascal.md` – Conceitos e sintaxe de matrizes (2D) em Pascal.
+- `rascunhos/git_passos_windows.md` – Passo a passo para instalar, configurar e publicar no GitHub (Windows).
 
 > ⚠️ Conteúdos de rascunho podem divergir ou ser reorganizados sem aviso.
 - Estruturas de dados avançadas
