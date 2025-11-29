@@ -11,9 +11,10 @@ class: draft
 > ⚠️ **RASCUNHO:** Material auxiliar. Referência principal: `README.md`.
 
 # **Git no Windows – Passo a Passo**
+
 ## Do zero ao primeiro push (HTTPS e SSH)
 
-Autor: (preencha)  
+Autor: Prof Bezerra
 Disciplina: Linguagem de Programação I
 
 ---
@@ -26,6 +27,26 @@ Disciplina: Linguagem de Programação I
 - Inicializar, comitar e enviar (HTTPS)
 - Opcional: configurar SSH
 - Entender o ciclo diário (pull → commit → push)
+- Compreender o conceito de controle de versão e seus benefícios
+
+---
+
+## O que é Controle de Versão
+
+- Controle de versão é um sistema que registra cada alteração feita nos arquivos ao longo do tempo, permitindo voltar a estados anteriores e acompanhar quem mudou o quê e quando.
+- **Git** é uma ferramenta de controle de versão distribuída (cada máquina tem cópia completa do histórico).
+- **GitHub** é uma plataforma de hospedagem que armazena repositórios Git e adiciona recursos (web, issues, pull requests, colaboração).
+
+### Benefícios
+
+- Histórico: ver evolução e recuperar versões anteriores (`git log`, `git checkout <commit>`).
+- Colaboração: várias pessoas podem trabalhar em paralelo sem sobrescrever trabalho.
+- Branches: criar linhas de desenvolvimento isoladas para novas funcionalidades ou correções.
+- Segurança: se algo quebrar, pode reverter ou comparar (`git diff`).
+- Auditoria: saber autor e momento de cada mudança (nome/email configurados).
+- Qualidade: commits pequenos e mensagens claras ajudam revisão e aprendizado.
+
+> Sem controle de versão, perder ou sobrescrever arquivos é muito mais fácil e não há histórico confiável.
 
 ---
 
@@ -141,13 +162,14 @@ git push
 
 Formato curto:
 
-```
+```text
 <tipo>: <descrição>
 ```
 
 Tipos comuns: `feat`, `fix`, `docs`, `refactor`, `chore`, `test`.
 
 Exemplos:
+
 - `feat: adicionar enum TPlayer ao jogo`
 - `refactor: substituir 9 variáveis por array 2D`
 - `docs: atualizar README com guia`
