@@ -410,6 +410,10 @@ Os seguintes arquivos são materiais de apoio (rascunhos). Use sempre este READM
 - `rascunhos/unidade1.md` – Enfoque inicial da Unidade 1 com fluxo detalhado do jogo.
 - `rascunhos/introducao_pascal.md` – Versão preliminar ampliada de fundamentos.
 - `rascunhos/slides_jogo_da_velha.md` – Construção incremental do jogo da velha.
+- `rascunhos/git_github_fundamentos.md` – Fundamentos de versionamento e boas práticas de commits.
+- `rascunhos/strings_pascal.md` – Operações com strings para melhorar interação e validação.
+- `rascunhos/arrays_evolucao_jogo_da_velha.md` – Refatoração usando arrays 1D/2D e dinâmica.
+- `rascunhos/tipos_personalizados_pascal.md` – Uso de enum, record e set para estruturar melhor o jogo.
 
 > ⚠️ Conteúdos de rascunho podem divergir ou ser reorganizados sem aviso.
 - Estruturas de dados avançadas
