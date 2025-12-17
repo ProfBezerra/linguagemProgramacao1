@@ -34,7 +34,7 @@ begin
   { Saída: exibir a média com duas casas decimais }
   writeln('Média = ', media:0:2);
 
-  { Decisão: aprovado se média >= 7.0 }
+    
   if media >= 7.0 then
     writeln('Aprovado')
   else

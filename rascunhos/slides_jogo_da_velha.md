@@ -330,6 +330,74 @@ end.
 
 ---
 
+## Regras e Condições de Vitória
+
+- Dois jogadores alternam: `X` começa, depois `O`, e assim por diante.
+- Vitória: 3 símbolos iguais na mesma linha, coluna ou diagonal.
+- Empate: 9 jogadas sem vitória.
+- Posições válidas: inteiros de 1 a 9 e casas não ocupadas.
+
+---
+
+## Validação de Entrada (Melhoria Sugerida)
+
+Antes de marcar, validar:
+
+- Faixa: `1 <= escolha <= 9`
+- Ocupação: `pos[escolha] = ' '` (casa livre)
+
+Tratamento amigável: repetir a leitura até obter uma posição válida.
+
+---
+
+## Versão com Procedimentos (Refatoração)
+
+Separar responsabilidades em procedimentos melhora legibilidade:
+
+```pascal
+procedure Inicializar();
+procedure MostrarTabuleiro();
+function PosicaoLivre(p: integer): boolean;
+procedure Marcar(p: integer);
+procedure VerificarVitoria();
+function Empate(): boolean;
+procedure AlternarJogador();
+procedure LerEMarcarJogada();
+```
+
+Benefícios: menos repetição, testes mais fáceis e manutenção simplificada.
+
+---
+
+## Matriz de Vitória (Ideia para Simplificar)
+
+Em vez de 8 `if`s, usar uma tabela de combinações e um laço:
+
+```pascal
+const
+  wins: array[1..8,1..3] of integer = (
+    (1,2,3), (4,5,6), (7,8,9),
+    (1,4,7), (2,5,8), (3,6,9),
+    (1,5,9), (3,5,7)
+  );
+```
+
+Percorrer `wins` e testar se as três posições pertencem ao jogador atual.
+
+---
+
+## Casos de Teste (Mentais)
+
+- Vitória em linha: `1,2,3 = X` (demais vazias)
+- Vitória em coluna: `1,4,7 = O`
+- Diagonal principal: `1,5,9 = X`
+- Diagonal secundária: `3,5,7 = O`
+- Empate: todas as 9 casas preenchidas sem combinação vencedora
+
+Use estes cenários para checar mentalmente o programa após mudanças.
+
+---
+
 ## Sugestões de Exercícios
 
 1. Trocar símbolo inicial para ser escolhido pelo usuário.
